@@ -9,9 +9,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/">Services</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/coverage">Coverage</NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink to="/aboutUs">About Us</NavLink>
       </li>
@@ -41,13 +41,12 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />
             </svg>
           </div>
           <ul
@@ -61,9 +60,7 @@ const Navbar = () => {
           <figure>
             <img src={logoImg} alt="" />
           </figure>
-          <a className="text-2xl -ms-3 font-bold text-[#303030]">
-            ZapShift
-          </a>
+          <a className="text-2xl -ms-3 font-bold text-[#303030]">ZapShift</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -73,7 +70,7 @@ const Navbar = () => {
         <a className="btn">Sign In</a>
         <a className="btn ml-2 bg-primary hover:bg-[#caeb16]">Sign Up</a>
         <span className="w-10 h-10 border rounded-full flex items-center justify-center ml-1 -rotate-45 text-primary bg-[#1F1F1F]">
-          <IoIosArrowRoundForward className="font-bold text-[30px]"/>
+          <IoIosArrowRoundForward className="font-bold text-[30px]" />
         </span>
       </div>
     </div>

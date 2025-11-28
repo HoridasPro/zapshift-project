@@ -7,6 +7,9 @@ import Pricing from "../Pages/Pricing";
 import Blog from "../Pages/Blog";
 import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
+import AuthLayout from "../Layout/AuthLayout/AuthLayout";
+import Login from "../Pages/Auth/Login";
+import Register from "../Pages/Auth/Register";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +48,20 @@ const router = createBrowserRouter([
         path: "/coverage",
         // loader: () => fetch("/jsonData.json").then((res) => res.json()),
         element: <Coverage />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },
