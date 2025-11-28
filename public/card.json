@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "quote": "A posture corrector works by providing support and gentle alignment to your shoulders, back, and spine.",
+    "name": "Awlad Hossin",
+    "designation": "Senior Product Designer",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 2,
+    "quote": "Using a posture corrector daily improves your natural alignment and reduces back pain.",
+    "name": "Sarah Rahman",
+    "designation": "Ergonomics Specialist",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 3,
+    "quote": "Good posture boosts confidence, improves breathing, and supports long-term spine health.",
+    "name": "David Lee",
+    "designation": "Physiotherapist",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 4,
+    "quote": "Maintaining correct posture reduces fatigue and helps you feel more energetic.",
+    "name": "Maria Gomez",
+    "designation": "Fitness Trainer",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 5,
+    "quote": "A posture brace gently trains your muscles to hold your body properly.",
+    "name": "John Smith",
+    "designation": "Health Advisor",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 6,
+    "quote": "Proper posture reduces stress on your joints and improves mobility.",
+    "name": "Emily Carter",
+    "designation": "Chiropractic Expert",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 7,
+    "quote": "Wearing a posture corrector helps eliminate slouching habits.",
+    "name": "Michael Brown",
+    "designation": "Posture Analyst",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 8,
+    "quote": "Correct posture improves circulation and reduces muscle tension.",
+    "name": "Sophia Ahmed",
+    "designation": "Wellness Coach",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 9,
+    "quote": "Using a posture corrector daily develops long-term healthy posture habits.",
+    "name": "Kevin Turner",
+    "designation": "Rehab Specialist",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  },
+  {
+    "id": 10,
+    "quote": "Consistent posture training leads to better balance and fewer injuries.",
+    "name": "Ariana Silva",
+    "designation": "Physical Fitness Consultant",
+    "image": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU..."
+  }
+]

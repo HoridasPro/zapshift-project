@@ -5,7 +5,8 @@ import ServicesSection from "../Components/ServicesSection";
 import Brands from "../Components/Brands";
 import DeliverySection from "../Components/DeliverySection";
 import CustomerSection from "../Components/CustomerSection";
-import Reviews from "../Router/Reviews";
+import Reviews from "../Components/Reviews";
+
 const reviewsPromise = fetch("./reviews.json").then((res) => res.json());
 
 const Home = () => {

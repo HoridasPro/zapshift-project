@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        index:true,
+        index: true,
         element: <Home />,
       },
       {
@@ -40,6 +40,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/coverage",
+        // loader: () => fetch("/jsonData.json").then((res) => res.json()),
+        element: <Coverage />,
       },
     ],
   },
