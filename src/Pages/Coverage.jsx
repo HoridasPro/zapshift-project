@@ -3,7 +3,6 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Extra from "../Components/Extra";
 const jsonPromise = fetch("/jsonData.json").then((res) => res.json());
-console.log(jsonPromise);
 
 const Coverage = () => {
   return (
