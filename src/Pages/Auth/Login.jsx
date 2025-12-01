@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import SocialLogin from "./SocialLogin";
 
 const Login = () => {
@@ -11,11 +11,14 @@ const Login = () => {
     formState: { errors },
   } = useForm();
   const { signInUser } = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleLogin = (data) => {
     console.log(data);
     signInUser(data.email, data.password)
       .then((result) => {
         console.log(result.user);
+        navigate(location?.state || "/");
       })
       .catch((error) => {
         console.log(error);
@@ -62,7 +65,11 @@ const Login = () => {
 
       <p className="text-center">
         If no account please register?{" "}
-        <Link to="/register" className="text-blue-800 font-medium">
+        <Link
+          state={location.state}
+          to="/register"
+          className="text-blue-800 font-medium"
+        >
           Register
         </Link>
       </p>

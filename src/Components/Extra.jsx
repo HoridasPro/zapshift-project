@@ -20,7 +20,7 @@ const Extra = ({ jsonPromise }) => {
   };
 
   return (
-    <div>
+    <div className="max-w-11/12 mx-auto">
       <h1>this is coverarge</h1>
       <div>
         <form onSubmit={handleLocation}>

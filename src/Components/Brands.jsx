@@ -23,7 +23,7 @@ const brandsLogo = [
 
 const Brands = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 max-w-11/12 mx-auto">
       <h1 className="font-bold text-3xl text-[#03373D] text-center">
         We've helped thousands of sales teams
       </h1>

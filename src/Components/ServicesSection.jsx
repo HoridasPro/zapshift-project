@@ -38,7 +38,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="bg-secondary mt-20 p-20 rounded-3xl">
+    <div className="bg-secondary mt-20 p-20 rounded-3xl max-w-11/12 mx-auto">
       <div className="text-center">
         <h1 className="text-2xl font-bold text-white">Our Services</h1>
         <p className="text-[#DADADA] w-3xl flex mx-auto text-[15px] mt-5">

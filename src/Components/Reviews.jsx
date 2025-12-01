@@ -66,7 +66,7 @@ const Reviews = ({ reviewsPromise }) => {
   const enableLoop = reviews.length > 3;
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 max-w-11/12 mx-auto">
       <div className="text-center">
         <img className="flex mx-auto mb-5" src={deliveryImg} alt="" />
         <h2 className="font-bold text-3xl text-[#03373D]">

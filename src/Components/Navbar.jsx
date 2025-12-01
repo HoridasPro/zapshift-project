@@ -1,9 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logoImg from "../assets/Vector 1.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import useAuth from "../hooks/useAuth";
 
 const Navbar = () => {
+  const { user, userLogOut } = useAuth();
   const links = (
     <>
       <li>
@@ -19,6 +21,12 @@ const Navbar = () => {
         <NavLink to="/pricing">Pricingc</NavLink>
       </li>
       <li>
+        <NavLink to="/rider">Ba a Rider</NavLink>
+      </li>
+      <li>
+        <NavLink to="/send_percel">Send Percel</NavLink>
+      </li>
+      <li>
         <NavLink to="/blog">Blog</NavLink>
       </li>
       <li>
@@ -29,6 +37,15 @@ const Navbar = () => {
       </li>
     </>
   );
+  const handleLogOut = () => {
+    userLogOut()
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="navbar bg-base-100 shadow-sm px-5">
       <div className="navbar-start">
@@ -66,9 +83,20 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end ">
-        <a className="btn">Sign In</a>
-        <a className="btn ml-2 bg-primary hover:bg-[#caeb16]">Sign Up</a>
+      <div className="navbar-end">
+        {user ? (
+          <button onClick={handleLogOut} className="btn">
+            Log Out
+          </button>
+        ) : (
+          <Link to="/login" className="btn">
+            Log In
+          </Link>
+        )}
+
+        <Link to="/rider" className="btn ml-2 bg-primary hover:bg-[#caeb16]">
+          Be a rider
+        </Link>
         <span className="w-10 h-10 border rounded-full flex items-center justify-center ml-1 -rotate-45 text-primary bg-[#1F1F1F]">
           <IoIosArrowRoundForward className="font-bold text-[30px]" />
         </span>

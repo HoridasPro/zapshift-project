@@ -3,7 +3,7 @@ import workImg from "../assets/bus.png";
 
 const WorkSection = () => {
   return (
-    <div className="mt-15">
+    <div className="mt-15 max-w-11/12 mx-auto">
       <h1 className="text-2xl font-bold">How it Works</h1>
       <div className="grid grid-cols-4 gap-5 mt-3">
         <div className="bg-white py-8 px-6 rounded-2xl">

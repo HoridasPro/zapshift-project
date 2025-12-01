@@ -10,6 +10,9 @@ import Home from "../Pages/Home";
 import AuthLayout from "../Layout/AuthLayout/AuthLayout";
 import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Register";
+import Rider from "../Pages/Rider";
+import Private from "../Private/Private";
+import SendPercel from "../Pages/SendPercel";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +26,23 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Services />,
+      },
+      {
+        path: "/rider",
+        element: (
+          <Private>
+            <Rider></Rider>
+          </Private>
+        ),
+      },
+      {
+        path: "/send_percel",
+        element: (
+          <Private>
+            <SendPercel></SendPercel>
+          </Private>
+        ),
+        loader: () => fetch("/jsonData.json").then((res) => res.json()),
       },
       {
         path: "/coverage",

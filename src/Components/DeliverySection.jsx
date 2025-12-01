@@ -6,7 +6,7 @@ import deliveryImg3 from "../assets/safe-delivery.png";
 const DeliverySection = () => {
   return (
     <div
-      className="mt-20 grid gap-5 border-b border-dashed"
+      className="mt-20 grid gap-5 border-b border-dashed max-w-11/12 mx-auto"
       style={{ paddingBottom: "70px" }}
     >
       <div className="flex items-center  gap-10 bg-white p-7 rounded-3xl">

@@ -4,7 +4,7 @@ import marchatImg from "../assets/be-a-merchant-bg.png";
 
 const CustomerSection = () => {
   return (
-    <div className="relative">
+    <div className="relative max-w-11/12 mx-auto">
       <img className="absolute" src={marchatImg} alt="" />
       <div className="flex items-center justify-evenly bg-secondary py-10 px-10 rounded-3xl mt-18">
         <div className="w-[50%]">
