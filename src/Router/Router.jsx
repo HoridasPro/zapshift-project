@@ -13,6 +13,10 @@ import Register from "../Pages/Auth/Register";
 import Rider from "../Pages/Rider";
 import Private from "../Private/Private";
 import SendPercel from "../Pages/SendPercel";
+import DashboardLayout from "../Layout/DashboardLayout";
+import MyParcels from "../Pages/Dashboard/MyParcels";
+import Payment from "../Pages/Dashboard/Payment/Payment";
+import PaymentSuccess from "../Pages/Dashboard/Payment/PaymentSuccess";
 
 const router = createBrowserRouter([
   {
@@ -82,6 +86,28 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: (
+      <Private>
+        <DashboardLayout></DashboardLayout>
+      </Private>
+    ),
+    children: [
+      {
+        path: "myParcels",
+        element: <MyParcels />,
+      },
+      {
+        path: "payment/:paymentId",
+        element: <Payment />,
+      },
+      {
+        path: "paymentSuccess",
+        element: <PaymentSuccess />,
       },
     ],
   },

@@ -35,6 +35,11 @@ const Navbar = () => {
       <li>
         <NavLink to="/coverage">Coverage</NavLink>
       </li>
+      {user && (
+        <li>
+          <NavLink to="/dashboard/myParcels">MyParcels</NavLink>
+        </li>
+      )}
     </>
   );
   const handleLogOut = () => {
@@ -73,12 +78,14 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <div className="flex items-center">
-          <figure>
-            <img src={logoImg} alt="" />
-          </figure>
-          <a className="text-2xl -ms-3 font-bold text-[#303030]">ZapShift</a>
-        </div>
+        <Link to="/">
+          <div className="flex items-center">
+            <figure>
+              <img src={logoImg} alt="" />
+            </figure>
+            <a className="text-2xl -ms-3 font-bold text-[#303030]">ZapShift</a>
+          </div>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
