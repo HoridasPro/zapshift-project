@@ -12,8 +12,9 @@ const MyParcels = () => {
   const axiosSecure = useAxios();
   const { data: parcels = [], refetch } = useQuery({
     queryKey: ["myParcels", user?.email],
+    //  enabled: !!user?.email,
     queryFn: async () => {
-      const res = await axiosSecure.get(`/parcels?email=${user.email}`);
+      const res = await axiosSecure.get(`parcels?email=${user?.email}`);
       return res.data;
     },
   });
@@ -47,7 +48,7 @@ const MyParcels = () => {
     });
   };
   return (
-    <div className="">
+    <div>
       <h1>this is my parcels {parcels.length}</h1>
       <div className="overflow-x-auto">
         <table className="table">
