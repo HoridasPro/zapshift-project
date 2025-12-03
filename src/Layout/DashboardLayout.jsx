@@ -51,7 +51,7 @@ const DashboardLayout = () => {
               <Link
                 to="/"
                 className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                data-tip="My Parcels"
+                data-tip="Home Page"
               >
                 {/* Home icon */}
                 <svg
@@ -75,7 +75,7 @@ const DashboardLayout = () => {
             <li>
               <NavLink
                 className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                data-tip="MyParcels"
+                data-tip="My Parcels"
                 to="/dashboard/myParcels"
               >
                 <CiDeliveryTruck className="text-xl"></CiDeliveryTruck>
