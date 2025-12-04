@@ -1,5 +1,6 @@
 import React from "react";
 import { CiDeliveryTruck } from "react-icons/ci";
+import { MdOutlinePayment } from "react-icons/md";
 import { NavLink } from "react-router";
 import { Link, Outlet } from "react-router";
 
@@ -80,23 +81,16 @@ const DashboardLayout = () => {
               >
                 <CiDeliveryTruck className="text-xl"></CiDeliveryTruck>
                 <span className="is-drawer-close:hidden">My Parcels</span>
-                {/* My parcels icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  fill="none"
-                  stroke="currentColor"
-                  className="my-1.5 inline-block size-4"
-                >
-                  <path d="M20 7h-9"></path>
-                  <path d="M14 17H5"></path>
-                  <circle cx="17" cy="17" r="3"></circle>
-                  <circle cx="7" cy="7" r="3"></circle>
-                </svg>
-                <span className="is-drawer-close:hidden">setting</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                data-tip="Payment History"
+                to="/dashboard/paymentHistory"
+              >
+                <MdOutlinePayment className="text-xl"></MdOutlinePayment>
+                <span className="is-drawer-close:hidden">Payment History</span>
               </NavLink>
             </li>
           </ul>
